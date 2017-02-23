@@ -1,1 +1,17 @@
+/*heading*/
+main-head {
+	font-color: #ebebeb;
+}
 
+
+/*footer*/
+.footer {
+	text-align: center;
+}
+
+
+/*crystal images*/
+.crystal-img {
+	height: 150px;
+	width: 150px;
+}
