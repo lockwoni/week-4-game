@@ -48,15 +48,17 @@ function nextGame() {
 function checkingNum () {
 	if (playerCounter === computerNum[0]) {
 		wins++;
-		$("#wins").text("Wins: "+ wins);
-		console.log("You win!");
+		$("#outcome").html("You won!!");
+		$("#wins").html("Wins: "+ wins);
+		console.log("You won!!");
 		nextGame();
 	}
 
 	else if (playerCounter > computerNum[0]) {
 		losses++;
-		$("#losses").text("Losses: " + losses);
-		console.log("You lose!");
+		$("#outcome").html("You lost!!");
+		$("#losses").html("Losses: " + losses);
+		console.log("You lost!!");
 		nextGame();
 	}
 
