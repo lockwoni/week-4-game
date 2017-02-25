@@ -1,12 +1,18 @@
 /*heading*/
-main-head {
-	font-color: #ebebeb;
+#main-head h1 {
+	color: #f0ad4e;
 }
 
 
 /*footer*/
 .footer {
 	text-align: center;
+}
+
+
+/*Random number div*/
+#div-random {
+	padding-bottom: 57px;
 }
 
 
