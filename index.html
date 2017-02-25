@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Crystals Collector Game</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">	
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
 <div class="container">
@@ -37,16 +39,15 @@
 
 			<div class="row">
 				<div class="col-md-8">
-					<div class="well" id="random-number">
-  					<h4>*Random Number*</h4>
-  					<h4>null</h4>
+					<div class="well">
+  						<h2 id="random-number"></h2>
 					</div>
 				</div>
 
 				<div class="col-md-4">
 					<div class="well" id="score">
-  					<h4>Wins: 0</h4>
-  					<h4>Losses: 0</h4>
+  					<h4 id = "wins">Wins: 0</h4>
+  					<h4 id = "losses">Losses: 0</h4>
 					</div>
 				</div>
 			</div>
@@ -56,19 +57,19 @@
 					<div class="panel panel-default">
 						<div class="row">
 							<div class="col-md-3">
-								<a href="#" class="btn btn-warning"><img src="assets/images/Crystal-orange.jpg" alt="Crystal" class="crystal-img"></a>
+								<a class="btn btn-warning"><img src="assets/images/Crystal-orange.jpg" alt="Crystal" class="crystal-img" id="crystal-orange"></a>
 							</div>
 
 							<div class="col-md-3">
-								<a href="#" class="btn btn-warning"><img src="assets/images/Crystal-teal.jpg" alt="Crystal" class="crystal-img"></a>
+								<a class="btn btn-warning"><img src="assets/images/Crystal-teal.jpg" alt="Crystal" class="crystal-img" id="crystal-teal"></a>
 							</div>
 
 							<div class="col-md-3">
-								<a href="#" class="btn btn-warning"><img src="assets/images/Crystal-clear.jpg" alt="Crystal" class="crystal-img"></a>
+								<a class="btn btn-warning"><img src="assets/images/Crystal-clear.jpg" alt="Crystal" class="crystal-img" id="crystal-clear"></a>
 							</div>
 
 							<div class="col-md-3">
-								<a href="#" class="btn btn-warning"><img src="assets/images/Crystal-green.jpg" alt="Crystal" class="crystal-img"></a>
+								<a class="btn btn-warning"><img src="assets/images/Crystal-green.jpg" alt="Crystal" class="crystal-img" id="crystal-green"></a>
 							</div>
 						</div>
 					</div>
@@ -95,7 +96,7 @@
 
 				<div class="col-md-8">
 					<div class="well">
-  						<h2>0</h2>
+  						<h2 id="player-count">0</h2>
 					</div>
 				</div>
 				
